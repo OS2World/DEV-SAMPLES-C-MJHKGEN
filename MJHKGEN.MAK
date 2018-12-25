@@ -1,0 +1,14 @@
+MJHKGEN.RES: MJHKGEN.RC    MJHKGEN.H
+   RC -R MJHKGEN.RC
+
+MJHKGEN.OBJ: MJHKGEN.C     MJHKGEN.H
+   CL /Alfu /B1 C1L /c /FPa /Fs /G2 /Gc /Gs /Zp MJHKGEN.C
+
+MJHKGEN.EXE:  \
+             MJHKGEN.DEF  \
+             MJHKGEN.OBJ  \
+             MJHKGEN.RES  \
+             MJHKGEN.L
+   LINK @MJHKGEN.L
+   RC MJHKGEN.RES MJHKGEN.EXE
+

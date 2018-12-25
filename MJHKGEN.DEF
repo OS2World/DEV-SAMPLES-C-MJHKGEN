@@ -1,0 +1,8 @@
+NAME    MJHKGEN  WINDOWAPI
+ 
+DESCRIPTION 'Generic System Queue Input Hook, Michael R. Jones'
+ 
+STACKSIZE   8096
+ 
+PROTMODE
+

@@ -1,0 +1,20 @@
+#include <os2.h>
+#include "mjhkgen.h"
+
+WINDOWTEMPLATE ID_MJHKGENDLG LOADONCALL MOVEABLE DISCARDABLE 
+  {
+  FRAME NULL, 0, 10, 26, 180, 31, FS_NOBYTEALIGN | 
+        FS_DLGBORDER | WS_VISIBLE | WS_CLIPSIBLINGS, 
+        FCF_SYSMENU | FCF_TITLEBAR | FCF_MINBUTTON |
+        FCF_TASKLIST | FCF_ICON
+    {
+    WINDOW "", FID_CLIENT, 0, 0, 180, 31, CLIENTCLASS, WS_VISIBLE
+      {
+      CONTROL "Turns hook on and off", ID_MJHKGENCB,
+              9, 11, 160, 10, 
+              WC_BUTTON,
+              BS_AUTOCHECKBOX | WS_TABSTOP | WS_VISIBLE
+      }
+    }
+  }
+
